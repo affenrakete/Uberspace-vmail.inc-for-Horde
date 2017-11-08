@@ -23,7 +23,7 @@ function vchpass($domain, $password, $username, $newpass) {
         ];
         
         $strPassword = utf8_decode($newpass);
-        $strCommand = 'vpasswd ' . $username;
+        $strCommand = 'vpasswd ' .  escapeshellarg($username);
         $process = proc_open($strCommand, $descriptorspec, $pipes, NULL, NULL);
         
         if (is_resource($process)) {
