@@ -1,12 +1,12 @@
 <?php
 
 # please replace with your Path to the vmail.inc on your uberspace
-$backends['mailmgr'] = array(
+$backends['mailmgr'] = [
     'disabled' => false,
     'name' => 'VMailMgr Server',
     'driver' => 'Vmailmgr',
-    'policy' => array(),
-    'params' => array(
+    'policy' => [],
+    'params' => [
         'vmailinc' => '/var/www/virtual/yourUsername/vmail.inc'
-    ),
-);
+    ],
+];
